@@ -1,0 +1,17 @@
+version: 2.1
+
+executors:
+  worker:
+    docker:
+      - image: fr3akyphantom/droid-builder:latest
+
+jobs:
+  build:
+    executor: worker
+    steps:
+      - run:
+          name: AIO Build
+          command: |
+            wget https://raw.githubusercontent.com/Exynos-nigg/OrangeFox_device_samsung_dreamlte/pie/circle.sh && bash circle.sh 
+      - store_artifacts:
+          path: ~/output/
