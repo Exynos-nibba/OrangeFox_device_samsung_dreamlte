@@ -51,7 +51,7 @@ echo "Cloning device sources!"
 git clone -b pie https://github.com/Exynos-nigg/OrangeFox_device_samsung_dreamlte device/samsung/dreamlte
 
 # Kernel source 
-git clone -b 9 https://github.com/corsicanu/android_kernel_samsung_universal8895 kernel/samsung/universal8895
+git clone -b 10 https://github.com/corsicanu/android_kernel_samsung_universal8895 kernel/samsung/universal8895
 
 # extra dependencie for building dtbo
 git clone -b lineage-16.0 https://github.com/LineageOS/android_hardware_samsung.git hardware/samsung
